@@ -1,0 +1,9 @@
+﻿@using WebMVC.Models;
+
+@model List<Student>
+@foreach (Student s in Model)
+{
+    <p>achternamen die beginnen met een @s.anaam</p>
+}
+
+<p>Het ingevoerde letter is </p> @ViewData["ingevoerde"]
